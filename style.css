@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F2631;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.container {
+    position: relative;
+    background: #313A49;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 510px;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+.advice-number {
+    font-family: 'Manrope';
+    letter-spacing: 2px;
+    color: #52FEAD;
+    margin: 25px 0;
+    font-size: 12px;
+}
+
+.image-divider {
+    height: 20px;
+    width: 100%;
+    background-image: url('images/pattern-divider-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0 70px 0;
+}
+
+.advice {
+    font-family: 'Manrope';
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+.btn-dice {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    align-self: center;
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: #52FEAD;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.btn-dice:hover {
+    box-shadow: 0px 0px 50px  #52FEAD;
+}
+
+.image-dice {
+    width: 20px;
+}
+
+@media (min-width: 376px) {
+    .container {
+        padding: 0 30px;
+    }
+    .image-divider {
+        background-image: url('images/pattern-divider-desktop.svg');
+    }
+
+}
